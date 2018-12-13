@@ -7,4 +7,8 @@ export const addArticle = article => ({ type: ADD_ARTICLE, payload: article });
 export const deleteArticle = article => ({ type: DELETE_ARTICLE, payload: article });
 
 // definir a action para carregar articles da api
-export const fetchArticles = () => ({type: FETCH_ARTICLES});
+export const fetchArticles = () =>
+{
+    console.log('chegou aqui');
+    return{type: FETCH_ARTICLES}
+};

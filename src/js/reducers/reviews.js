@@ -14,7 +14,7 @@ const initialState = [];
 // um Reducer recebe sempre 2 parâmetros:
 // 1) o state atual
 // 2) a action
-const articlesReducer = (state = initialState, action) => {
+const reviewsReducer = (state = initialState, action) => {
 
     // consoante a action irá executar uma operação diferente
     switch (action.type) {
@@ -43,4 +43,4 @@ const articlesReducer = (state = initialState, action) => {
     }
 };;
 
-export default articlesReducer;
+export default reviewsReducer;

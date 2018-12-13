@@ -19,20 +19,16 @@ const Root = ({ store }) => (
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/detail/">Detail</Link>
-                        </li>
-                        <li>
                             <Link to="/users/">Users</Link>
                         </li>
 
-                        <User />
 
                     </ul>
                 </nav>
 
                 <Route path="/" exact component={App} />
 
-                <Route path="/detail/:id" component={Detail} />
+                <Route path="/review/:id" component={Detail} />
 
                 {/* Route que irá obter a resposta do Laravel (api) com o código para pedir o access token  */}
                 <Route path="/callback" component={Callback} />
